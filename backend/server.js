@@ -14,7 +14,7 @@ const app = express();
 // Connect to Database
 connectDB();
 
-app.use(cors());
+app.use(cors({ origin: '[https://farmer-crop-portal.vercel.app](https://farmer-crop-portal.vercel.app)' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
